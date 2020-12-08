@@ -1,0 +1,81 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "indent": [
+            "error",
+            4
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "no-extra-parens": [ "warn" ],
+        "curly": [ "warn" ],
+        "dot-notation": [ "warn" ],
+        "no-empty-function": "off",
+        "@typescript-eslint/no-empty-function": [
+            "error", { "allow": [ "constructors" ] }
+        ],
+        "max-len": [ "error", { "code": 100, "ignorePattern": "^import .*", "ignoreStrings": true, "ignoreComments": true } ]
+    }
+}
+
+// "env": {
+//     "browser": true,
+//     "es2020": true
+// },
+// "extends": [
+//     "eslint:recommended",
+//     "plugin:@typescript-eslint/recommended"
+// ],
+// "parser": "@typescript-eslint/parser",
+// "parserOptions": {
+//     "ecmaVersion": 11,
+//     "sourceType": "module"
+// },
+// "plugins": [
+//     "@typescript-eslint"
+// ],
+// "rules": {
+//     "indent": [
+//         "error",
+//         4
+//     ],
+//     "linebreak-style": [
+//         "error",
+//         "unix"
+//     ],
+//     "quotes": [
+//         "error",
+//         "single"
+//     ],
+//     "semi": [
+//         "error",
+//         "always"
+//     ],
+//     "linebreak-style": [ "warn", "windows" ],
+//     "no-extra-parens": [ "warn" ],
+//     "curly": [ "warn" ],
+//     "dot-notation": [ "warn" ],
+//     "no-empty-function": "off",
+//     "@typescript-eslint/no-empty-function": [
+//         "error", { "allow": [ "constructors" ] }
+//     ],
+//     "max-len": [ "error", { "code": 100, "ignorePattern": "^import .*"  } ]
+// }

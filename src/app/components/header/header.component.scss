@@ -1,0 +1,13 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 0;
+    .logo {
+        width: 230px;
+        text-align: right;
+        padding: 25px;
+    }
+    .title {
+        padding: 20px 0;
+    }
+}

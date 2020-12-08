@@ -1,0 +1,26 @@
+@import '../../../core.scss';
+.nav {
+    display: flex;
+    flex-direction: row;
+    .list {
+        padding-left: 230px;
+        width: 100%;
+        ul {
+            display: flex;
+            flex-direction: row;
+            li {
+                list-style: none;
+                min-width: 150px;
+                a {
+                    cursor: pointer;
+                    transition: color 0.2s;
+                    width: 16.66%;
+                    text-decoration: none;
+                    &:hover {
+                        color: $green;
+                    }
+                }
+            }
+        }
+    }
+}

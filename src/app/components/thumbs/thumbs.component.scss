@@ -1,0 +1,30 @@
+@import '../../../core';
+.thumbs {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    .up, .down {
+        background: url( '/assets/thumbs.png' );
+        cursor: pointer;
+        height: 32px;
+        width: 32px;
+    }
+    .up {
+        background-position: 100% 0;
+        &.inverse {
+            background-position: 100% 100%;
+        }
+    }
+    .down {
+        background-position: 0 0;
+        &.inverse {
+            background-position: 0% 100%;
+        }
+    }
+    .count {
+        padding: 5px;
+        &.inverse {
+            color: $white;
+        }
+    }
+}

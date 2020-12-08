@@ -1,0 +1,58 @@
+@import '../../../core.scss';
+.article {
+    padding: 25px 0;
+    &.inverse {
+        background-color: $red;
+        h3, p {
+            color: $white;
+        }
+        .content {
+            .paragraphs {
+                p {
+                    color: $white;
+                }
+            }
+        }
+        .tags {
+            li {
+                color: $white;
+            }
+        }
+    }
+    article {
+        h3 {
+            padding-left: 230px;
+            min-width: 600px;
+        }
+        .content {
+            display: flex;
+            flex-direction: row;
+            padding: 25px 0;
+            .thumbs-up-down {
+                width: 230px;
+                min-width: 230px;
+                padding-right: 25px;
+            }
+            .paragraphs {
+                min-width: 600px;
+                padding-right: 25px;
+                width: calc( 100% - 230px );
+            }
+        }
+        .tags {
+            display: flex;
+            flex-direction: row;
+            padding-left: 230px;
+            &.inverse {
+                li {
+                    color: $white;
+                }
+            }
+            li {
+                list-style: none;
+                opacity: 0.5;
+                padding-right: 25px;
+            }
+        }
+    }
+}

@@ -1,0 +1,3 @@
+<div *ngFor="let article of mockData; let i = index;">
+    <app-article [article]="article" [inverse]="i % 2"></app-article>
+</div>

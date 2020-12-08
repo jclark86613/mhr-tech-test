@@ -1,0 +1,18 @@
+<div class="article" [ngClass]="{'inverse': inverse }">
+    <article>
+        <h3>{{article.title}}</h3>
+        <div class="content">
+            <app-thumbs
+                class="thumbs-up-down"
+                [thumbs]="article.thumbs"
+                [inverse]="inverse"
+                (clickThumb)="updateThumbCount( $event )"></app-thumbs>
+            <div class="paragraphs">
+                <p *ngFor="let paragraph of article.content">{{paragraph}}</p>
+            </div>
+        </div>
+        <ul class="tags">
+            <li *ngFor="let tag of article.tags">{{tag}}</li>
+        </ul>
+    </article>
+</div>

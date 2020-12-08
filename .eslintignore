@@ -1,0 +1,5 @@
+*.scss
+*.ico
+*.html
+*polyfills.ts
+*.png
